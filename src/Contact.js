@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Box, Typography, Modal, Button } from "@mui/material";
+import { Box, Typography, Modal} from "@mui/material";
 import Heading from "./components/heading";
 import Navbar from "./components/navbar";
 import { useMediaQuery } from "@mui/material";
@@ -28,14 +28,10 @@ const Contact = () => {
 
   // Separate state for each modal
   const [openFirstModal, setOpenFirstModal] = useState(false);
-  const [openSecondModal, setOpenSecondModal] = useState(false);
 
   // Separate handleOpen and handleClose for each modal
   const handleOpenFirstModal = () => setOpenFirstModal(true);
   const handleCloseFirstModal = () => setOpenFirstModal(false);
-
-  const handleOpenSecondModal = () => setOpenSecondModal(true);
-  const handleCloseSecondModal = () => setOpenSecondModal(false);
 
   return (
     <Box>
